@@ -1,0 +1,26 @@
+#!/usr/bin/bash
+
+# 사용할 GPIO 번호 배열
+pins=(22 17 27 5)
+
+# 출력 모드 설정
+for pin in "${pins[@]}"
+do
+  pinctrl set "$pin" op
+done
+
+while true; do
+  for pin in "${pins[@]}"
+  do
+    # 모든 LED 끄기
+    for off in "${pins[@]}"
+    do
+      pinctrl set "$off" dl
+    done
+
+    # 현재 LED 켜기
+    pinctrl set "$pin" dh
+
+    sleep 1
+  done
+done
