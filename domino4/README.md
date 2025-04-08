@@ -1,6 +1,8 @@
 
 # 🁢 LED 도미노 효과 (Raspberry Pi + pinctrl)
 
+유튜브 링크 : https://youtu.be/q9rkVwIB0Yc?si=TCF4KMKnaLINxfkB
+
 이 Bash 스크립트는 라즈베리파이의 GPIO 핀 4개를 사용하여  
 LED에 **도미노처럼 순차적으로 불이 들어오는** 효과를 구현합니다.  
 LED는 하나씩 차례대로 1초 간격으로 켜졌다가 꺼지며, 다음 LED로 넘어갑니다.
