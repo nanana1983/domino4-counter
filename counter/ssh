@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+# GPIO 핀 배열 (1, 2, 3번 LED 순서 → 하위비트부터)
+pins=(5 27 22)
+
+# 출력 설정
+for pin in "${pins[@]}"
+do
+  pinctrl set "$pin" op
+done
+
+while true; do
+  for i in {0..7}
+  do
+    # 모든 LED 끄기
+    for pin in "${pins[@]}"
+    do
+      pinctrl set "$pin" dl
+    done
+
+    # 이진수 상태로 LED 켜기
+    for bit in {0..2}
+    do
+      # 비트가 1이면 해당 핀을 켬
+      if (( (i >> bit) & 1 )); then
+        pinctrl set "${pins[$bit]}" dh
+      fi
+    done
+
+    sleep 1
+  done
+done
