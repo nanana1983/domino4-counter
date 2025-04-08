@@ -1,6 +1,7 @@
 
 # 🔢 3비트 LED 이진 카운터 (Raspberry Pi + pinctrl)
 
+유튜브 링크 : https://youtu.be/8vyzvUJIZ4E
 이 Bash 스크립트는 라즈베리파이의 GPIO 핀 3개를 사용해  
 **0부터 7까지의 숫자를 이진수 형태로 LED로 표현**하는 3비트 카운터입니다.  
 1초마다 숫자가 하나씩 올라가며 LED 상태가 변경됩니다.
