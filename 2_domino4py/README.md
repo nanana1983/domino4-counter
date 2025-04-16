@@ -45,7 +45,8 @@ Python과 [gpiozero](https://gpiozero.readthedocs.io/) 라이브러리를 사용
 - 각 GPIO 핀은 **330Ω 저항을 거쳐 LED의 긴 다리(양극)**에 연결
 - **짧은 다리(음극)**는 **GND (핀 6, 9, 14번 등)**에 연결됩니다
 - ![image](https://github.com/user-attachments/assets/70fc3376-afe2-40df-b0a2-7e1f98f31d7e)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/67d54d64-2c06-436d-b06b-2e4f77ee6a30)
+
 
 
 
